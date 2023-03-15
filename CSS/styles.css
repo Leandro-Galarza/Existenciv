@@ -1,291 +1,308 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
-    font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    padding: 0;
-    margin: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+* {
+  background-color: black;
+  color: white;
 }
 
-body {
-    background-color: black;
-}
-
-
-button span {
-    font-size: 2rem;
-}
-
+/*HEADER*/
 header {
-    text-align: center;
+  text-align: center;
 }
-
-.logo_contenedor {
-    display: flex;
-    justify-content: center;
+header .logo_contenedor {
+  display: flex;
+  justify-content: center;
 }
-
-.logo_contenedor img {
-    width: 170px;
-    height: 170px;
+@media screen and (max-width: 576px) {
+  header .logo_contenedor {
+    margin: 5px;
+  }
 }
-
-nav {
-    font-size: 15rem;
-
+header .logo_contenedor img {
+  width: 170px;
+  height: 170px;
 }
-#nav-items {
-    padding-right: 40px;
+@media screen and (max-width: 576px) {
+  header .logo_contenedor img {
+    width: 100px;
+    height: 100px;
+  }
 }
-
-.nav-item {
-    margin-left: 30px;
-    margin-right: 30px;
+header nav {
+  font-size: 15rem;
 }
-
-.portada img {
-    width: 100%;
-    position: relative;
+@media screen and (max-width: 576px) {
+  header nav {
+    font-size: 10rem;
+  }
 }
-
-.p_container {
-    position: absolute;
-    margin: 0px;
-    top: 80%;
-    text-align: center;
-    font-size: 6rem;
-    color: white;
+header #nav-items {
+  padding-right: 40px;
 }
-
-.hline_container {
-    border: solid #000;
-    border: 1px;
-    margin-top: 18px;
-
+@media screen and (max-width: 576px) {
+  header #nav-items {
+    padding-right: 0px;
+  }
 }
-
-.hline {
-    border: 0;
-    height: 1.5px;
-    background-image: linear-gradient(to right, #3498db, #10d7af, #3498db);
+header .nav-item {
+  margin-left: 30px;
+  margin-right: 30px;
 }
-
-.hline hr :after {
-    content: '§';
-    display: inline-block;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(60deg);
-    transform-origin: 50% 50%;
-    padding: 1rem;
+header button span {
+  font-size: 2rem;
 }
-
-.frames {
-    margin-top: 20px;
-}
-
-    /*FOOTER*/
 
 .footer {
-    background-color: black;
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
-
-.red-social {
-    font-size: 10rem;
-    color: white;
+.footer .red-social {
+  font-size: 10rem;
 }
-
-.copy {
+.footer .copy {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+@media screen and (max-width: 576px) {
+  .footer .copy {
     display: flex;
-    flex-direction: row;
-    justify-content: end;
+    justify-content: center;
+    margin-right: 0px;
+  }
+}
+.footer .copyright {
+  font-size: 1.3rem;
+  margin-right: 1.5rem;
+}
+@media screen and (max-width: 576px) {
+  .footer .copyright {
+    margin-right: 0px;
+  }
 }
 
-.copyright {
-    font-size: 1.3rem;
-    margin-right: 1.5rem;
+.hero .portada img {
+  width: 100%;
+  position: relative;
 }
-
-
-
-    /*DISCOGRAPHY*/
+@media screen and (max-width: 576px) {
+  .hero .portada img {
+    border: 10px solid black;
+  }
+}
+.hero .p_container {
+  position: absolute;
+  margin: 0px;
+  top: 80%;
+  text-align: center;
+  font-size: 6rem;
+  background-color: transparent !important;
+}
+@media screen and (max-width: 576px) {
+  .hero .p_container {
+    margin-top: 10px;
+    position: relative;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+.hero .p_container p {
+  background-color: transparent !important;
+}
+@media screen and (max-width: 576px) {
+  .hero .p_container p {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+.hero .hline_container {
+  border: solid black;
+  border: 1px;
+  margin-top: 18px;
+}
+.hero .hline_container .hline {
+  border: 0;
+  height: 1.5px;
+  background-image: linear-gradient(to right, #3498db, #10d7af, #3498db);
+}
+.hero .hline_container .hline hr :after {
+  content: "§";
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(60deg);
+  transform-origin: 50% 50%;
+  padding: 1rem;
+}
+.hero .frames {
+  margin-top: 20px;
+}
+@media screen and (max-width: 576px) {
+  .hero .frames {
+    margin: 0px;
+    border: 10px solid black;
+  }
+}
 
 #albums {
-    width: 90%;
-    margin: 100px auto;	 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  width: 90%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media screen and (max-width: 576px) {
+  #albums {
+    margin-bottom: 0px;
+  }
+}
+#albums .col-lg-3 {
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+  transition: 1s;
+}
+#albums .col-lg-3 p {
+  font-size: 2rem;
+  text-align: center;
+}
+#albums .col-lg-3 img {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+#albums .col-lg-3:hover {
+  transform: scale(1.2);
+  z-index: 2;
 }
 
-.col-lg-3{
-    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
-    transition: 1s;
-
+#galeria {
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+  transition: 2s;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 25px 25px 0px 25px;
+  border-bottom: 2px;
 }
-.col-lg-3 img{
-    display: block;
-    width:100%;
-    border-radius: 5px;
-}
-.col-lg-3:hover{
-    transform: scale(1.2);
-    z-index: 2;
-}
-
-.col-lg-3 p {
-font-size: 2rem;
-text-align: center;
-}
-
-
-
-    /*GALLERY*/
-
-#galeria .col-lg-4 {
-    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
-    transition: 2s;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 25px 25px 0px 25px;
-    border-bottom: 2px;
-
-}
-
 #galeria img {
-    display: block;
-    width: 100%;
-    border-radius: 5px;
-
+  display: block;
+  width: 100%;
+  border-radius: 5px;
 }
 
 #galeria img:hover {
-    transform: scale(1.3);
-    z-index: 2;
+  transform: scale(1.3);
+  z-index: 2;
 }
 
-    /*MERCH*/
-
 .contenedor_merch {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin: 80px 0px;
+}
+@media screen and (max-width: 576px) {
+  .contenedor_merch {
+    margin: 25px 25px 25px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat 5, 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    margin: 80px 0px;
+  }
+}
+.contenedor_merch img {
+  width: 100%;
 }
 
-.contenedor_merch img {
-    width: 100%;
-} 
-    
-/*CONTACT*/
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.shopbox {
+  background-color: #151320;
+}
+
+.shopbtn {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 78%;
+  left: 50%;
+  border-radius: 5px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+@media screen and (max-width: 576px) {
+  .shopbtn {
+    top: 218%;
+    left: 83%;
+  }
+}
+
+.shopbtn:before {
+  content: "";
+  height: 150%;
+  width: 150%;
+  position: absolute;
+  background: conic-gradient(#3498db, #10d7af, #3498db);
+  left: -25%;
+  top: -25%;
+  animation: spin 1.5s infinite linear;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.shopbtn:after {
+  content: "SHOP NOW";
+  text-align: center;
+  position: absolute;
+  background-color: #13121a;
+  height: 93%;
+  width: 93%;
+  top: 3.5%;
+  left: 3.5%;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 6px;
+  display: grid;
+  place-items: center;
+}
 
 #contacto_contenedor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+#contacto_contenedor h1 {
+  color: grey;
+  text-align: center;
+}
+#contacto_contenedor h2 {
+  text-align: center;
 }
 
-.info_contenedor h1 {
-    color: grey;
-    text-align: center;
-
+body {
+  background-color: black;
 }
 
-
-    /*MOBILE*/
-    
-@media only screen and (max-width: 576px) {
-    .logo_container img {
-        width: 80px;
-        height: 80px;
-    }
-
-    nav {
-        font-size: 10rem;
-    }
-
-    #nav-items {
-        padding-right: 0px;
-    }
-
-    .logo_contenedor {
-        margin: 5px;
-    }
-
-    .logo_contenedor img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .portada img {
-        border: 10px solid #000;
-    }
-
-    .p_container {
-        margin-top: 10px;
-        position: relative;
-        text-align: center;
-        font-size: 1.5rem;
-    }
-
-    .p_container p {
-        text-align: center;
-        font-size: 1.5rem;
-    }
-
-    .frames {
-        margin: 0px;
-        border: 10px solid #000;
-    }
-
-
-
-    /* FOOTER */
-
-
-    .red-social {
-        font-size: 10rem;
-        margin: 0px 90px;
-        color: aliceblue;
-    }
-
-    .copy {
-        display: flex;
-        justify-content: center;
-        margin-right: 0px;
-    }
-
-    .copyright {
-        margin-right: 0px;
-    }
-
-
-    /*DISCOGRAPHY*/
-
-#albums {
-    margin-bottom: 0px;
-}
-
-
-
-    /*MERCH*/
-
-.contenedor_merch {
-        margin: 25px 25px 25px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat (5, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        } 
-
-}
-
+/*# sourceMappingURL=styles.css.map */

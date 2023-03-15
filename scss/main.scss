@@ -1,0 +1,16 @@
+
+@use 'variables.scss';
+@use 'mediaq.scss';
+@use 'reset.scss';
+@use 'header.scss';
+@use 'footer.scss';
+@use 'index.scss';
+@use 'discography.scss';
+@use 'gallery.scss';
+@use 'merch.scss';
+@use 'contact.scss';
+
+body {
+    background-color: black;
+}
+

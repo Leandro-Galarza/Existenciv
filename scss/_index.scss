@@ -1,0 +1,66 @@
+@use 'mediaq' as *;
+.hero {
+
+    .portada img {
+        width: 100%;
+        position: relative;
+
+        @include mobile {
+            border: 10px solid black;}
+    }
+
+    .p_container {
+        position: absolute;
+        margin: 0px;
+        top: 80%;
+        text-align: center;
+        font-size: 6rem;
+        background-color: transparent !important;
+
+        @include mobile {        
+            margin-top: 10px;
+            position: relative;
+            text-align: center;
+            font-size: 1.5rem;}
+
+        p {
+            background-color: transparent !important;
+            @include mobile {
+                text-align: center;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .hline_container {
+        border: solid black;
+        border: 1px;
+        margin-top: 18px;
+
+        .hline {
+            border: 0;
+            height: 1.5px;
+            background-image: linear-gradient(to right, #3498db, #10d7af, #3498db);
+
+        }
+
+        .hline hr :after {
+            content: '§';
+            display: inline-block;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(60deg);
+            transform-origin: 50% 50%;
+            padding: 1rem;
+        }
+    }
+
+    .frames {
+        margin-top: 20px;
+
+        @include mobile {
+            margin: 0px;
+            border: 10px solid black;
+        }
+    }
+}

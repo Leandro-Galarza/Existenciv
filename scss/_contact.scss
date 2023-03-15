@@ -1,0 +1,17 @@
+@use 'mediaq' as *;
+
+#contacto_contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+
+    h1 {
+        color: grey;
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}

@@ -1,0 +1,35 @@
+@use 'mediaq' as *;
+
+
+#albums {
+    width: 90%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    @include mobile {
+        margin-bottom: 0px;
+    }
+
+    .col-lg-3 {
+        box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+        transition: 1s;
+
+        p {
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+
+    .col-lg-3 img {
+        display: block;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .col-lg-3:hover {
+        transform: scale(1.2);
+        z-index: 2;
+    }
+} 

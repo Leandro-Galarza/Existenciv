@@ -1,0 +1,31 @@
+@use 'mediaq' as *;
+.footer {
+    width: 100%;
+    text-align: center;
+
+    .red-social {
+        font-size: 10rem;
+
+    }
+
+    .copy {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        
+        @include mobile {
+            display: flex;
+            justify-content: center;
+            margin-right: 0px;
+        }
+    }
+
+    .copyright {
+        font-size: 1.3rem;
+        margin-right: 1.5rem;
+
+        @include mobile {
+            margin-right: 0px;
+        }
+    }
+}
